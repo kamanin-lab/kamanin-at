@@ -1,0 +1,29 @@
+# WordPress uploads and generated files
+uploads/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node / build tools (if added later)
+node_modules/
+dist/
+*.map
+
+# Environment files
+.env
+.env.*
+
+# Local by Flywheel
+*.sql
+
+# Keep plugin dir tracked even if empty
+!plugins/.gitkeep
