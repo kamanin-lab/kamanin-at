@@ -1,0 +1,17 @@
+/**
+ * Theme Name: Blocksy Child
+ * Description: Blocksy Child theme
+ * Author: Creative Themes
+ * Template: blocksy
+ * Text Domain: blocksy
+ */
+
+/* Fix: header full-width stretch */
+.ct-header {
+	max-width: 100% !important;
+}
+
+.site-header {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}

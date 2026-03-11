@@ -1,29 +1,69 @@
-# WordPress uploads and generated files
-uploads/
-*.log
+# =====================
+# WordPress core
+# =====================
+wp-admin/
+wp-includes/
+wp-config.php
+wp-config-sample.php
+wp-blog-header.php
+wp-comments-post.php
+wp-cron.php
+wp-links-opml.php
+wp-load.php
+wp-login.php
+wp-mail.php
+wp-settings.php
+wp-signup.php
+wp-trackback.php
+xmlrpc.php
+wp-activate.php
+index.php
+readme.html
+license.txt
+local-xdebuginfo.php
+.htaccess
+*.htaccess
 
-# OS files
+# =====================
+# wp-content — игнорируем всё кроме нашего кода
+# =====================
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/backup-db/
+wp-content/cache/
+wp-content/litespeed/
+
+# Сторонние темы (игнорируем всё кроме нашей)
+wp-content/themes/*
+!wp-content/themes/blocksy-child/
+
+# Все плагины (кроме кастомных — разкомментируй когда появятся)
+wp-content/plugins/*
+# !wp-content/plugins/my-custom-plugin/
+
+# =====================
+# OS / Editor
+# =====================
 .DS_Store
 Thumbs.db
 desktop.ini
-
-# Editor files
 .vscode/
 .idea/
 *.swp
 *.swo
 
-# Node / build tools (if added later)
+# Node / build
 node_modules/
 dist/
 *.map
 
-# Environment files
+# Env / secrets
 .env
 .env.*
-
-# Local by Flywheel
 *.sql
 
-# Keep plugin dir tracked even if empty
-!plugins/.gitkeep
+# Local by Flywheel
+.local/
+
+# Keep plugins dir tracked if empty
+!wp-content/plugins/.gitkeep
